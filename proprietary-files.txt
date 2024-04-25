@@ -907,7 +907,6 @@ vendor/lib64/libuicc_vendor.so
 vendor/lib64/qcrild_librilutils.so
 vendor/lib64/qtibus.so
 vendor/lib64/qtimutex.so
-vendor/lib64/vendor.lge.hardware.radio@2.0.so:vendor/lib64/vendor.lge.hardware.radio@2.0_vendor.so;FIX_SONAME
 vendor/lib64/vendor.qti.hardware.radio.am@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.atcmdfwd@1.0.so
 vendor/lib64/vendor.qti.hardware.radio.internal.deviceinfo@1.0.so
