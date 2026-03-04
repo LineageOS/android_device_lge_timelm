@@ -310,7 +310,8 @@ firmware_directories /mnt/vendor/persist-lg/wifi/qcom/ /vendor/firmware_mnt/imag
 /sys/bus/pci/drivers/wil6210* 0000:01:00.0/net/wigig0/gro_flush_timeout 0660 system system
 /sys/devices/virtual/net/bond0 queues/rx-0/rps_cpus 0660 system system
 
-#nfc permissions
+# NFC permissions
+/dev/cxd22xx-i2c        0660    nfc         nfc
 /dev/pn547              0660    nfc         nfc
 
 # UIO devices

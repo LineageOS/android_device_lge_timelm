@@ -7,6 +7,7 @@
 /dev/block/platform/soc/1d84000\.ufshc/by-name/drm                       u:object_r:drm_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/p_persist_lg              u:object_r:persist_lg_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/els                       u:object_r:els_block_device:s0
+/dev/block/platform/soc/1d84000\.ufshc/by-name/felica                    u:object_r:felica_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/ftm                       u:object_r:vendor_efs_boot_dev:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/mpt                       u:object_r:mpt_block_device:s0
 /dev/block/platform/soc/1d84000\.ufshc/by-name/srtc                      u:object_r:srtc_block_device:s0
@@ -22,6 +23,7 @@
 /sys/devices/platform/soc/884000.i2c/i2c-3/3-0010/884000.i2c:qcom,smb1390@10:qcom,charge_pump(/.*)?    u:object_r:sysfs_charger:s0
 
 # Devices
+/dev/cxd22xx-i2c          u:object_r:nfc_device:s0
 /dev/pn547                u:object_r:nfc_device:s0
 
 # Fingerprint
@@ -38,6 +40,7 @@
 
 # HALs
 /(vendor|system/vendor)/bin/hw/android\.hardware\.neuralnetworks@1\.2-service-qti                       u:object_r:vendor_hal_neuralnetworks_default_exec:s0
+/(vendor|system/vendor)/bin/hw/android\.hardware\.nfc@1\.2-service-cxd22xx                              u:object_r:hal_nfc_default_exec:s0
 /(vendor|system/vendor)/bin/hw/vendor\.lge\.hardware\.lgdata@1\.1-service                               u:object_r:hal_lgdata_default_exec:s0
 /(vendor|system/vendor)/bin/ppd                                                                         u:object_r:vendor_hal_display_color_default_exec:s0
 /(vendor|system/vendor)/bin/qni                                                                         u:object_r:qni_exec:s0
@@ -57,6 +60,7 @@
 /mnt/vendor/persist-lg/audio(/.*)?                      u:object_r:persist_lg_audio_file:s0
 /mnt/vendor/persist-lg/camera(/.*)?                     u:object_r:persist_lg_camera_file:s0
 /mnt/vendor/persist-lg/data(/.*)?                       u:object_r:qseesfs_data_file:s0
+/mnt/vendor/persist-lg/felica(/.*)?                     u:object_r:persist_lg_data_file:s0
 /mnt/vendor/persist-lg/firmware(/.*)?                   u:object_r:firmware_data_file:s0
 /mnt/vendor/persist-lg/tof(./*)?                        u:object_r:persist_lg_camera_file:s0
 /mnt/vendor/persist-lg/widevine(/.*)?                   u:object_r:widevine_data_file:s0

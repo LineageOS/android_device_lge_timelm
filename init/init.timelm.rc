@@ -4,6 +4,15 @@ import /vendor/etc/init/hw/init.qcom.rc
 # to override init.qcom.rc and init.target.rc
 import /vendor/etc/init/hw/init.lge.rc
 
+service vendor.nfc_hal_service-cxd22xx /vendor/bin/hw/android.hardware.nfc@1.2-service-cxd22xx
+    interface android.hardware.nfc@1.0::INfc default
+    interface android.hardware.nfc@1.1::INfc default
+    interface android.hardware.nfc@1.2::INfc default
+    class hal
+    user nfc
+    group nfc
+    disabled
+
 on post-fs
     # change permissions on ioninfo
     chown root log /proc/ioninfo

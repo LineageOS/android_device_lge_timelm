@@ -784,9 +784,13 @@ vendor/lib64/unnhal-acc-adreno.so
 vendor/lib64/unnhal-acc-common.so
 vendor/lib64/unnhal-acc-hvx.so
 
-# NFC
+# NFC (NXP)
 vendor/firmware/libpn557_fw.so:vendor/lib/libpn557_fw.so
 vendor/firmware/libpn557_fw_64.so:vendor/lib64/libpn557_fw_64.so
+
+# NFC (Sony) - from timelm_dcm_jp-user 12 SKQ1.211103.001 231641238fda7 release-keys
+vendor/bin/hw/android.hardware.nfc@1.2-service-cxd22xx|40809de73c88443fd6c22ac3c2668041d4108670
+vendor/firmware/cxd225x_firmware.bin|0000f3ad8b2d89fe1045809d379176994a363d35
 
 # PASR
 vendor/lib/vendor.qti.memory.pasrmanager@1.0.so

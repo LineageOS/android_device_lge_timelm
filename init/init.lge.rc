@@ -327,6 +327,11 @@ on boot
     write /sys/kernel/debug/clk/debug_suspend 1
     write /sys/module/msm_show_resume_irq/parameters/debug_mask 1
 
+on property:vendor.lge.nfc_vendor=sony
+    stop vendor.nfc_hal_service
+    exec u:r:vendor_modprobe:s0 -- /vendor/bin/modprobe -a -d /vendor/lib/modules cxd22xx
+    start vendor.nfc_hal_service-cxd22xx
+
 on property:ro.vendor.lge.minios.bootstart=1
     stop vendor.lge-biometrics-fingerprint-hal-2-2
 
