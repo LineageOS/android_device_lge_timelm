@@ -1897,7 +1897,8 @@
 
     <path name="speaker-mic">
         <path name="amic3" />
-        <ctl name="ADC1 Volume" value="6" />
+        <ctl name="ADC2 Volume" value="12" />
+        <ctl name="TX_DEC0 Volume" value="84" />
     </path>
 
     <path name="speaker-mic-liquid">
@@ -2459,8 +2460,8 @@
 
     <path name="unprocessed-mic">
         <path name="unprocessed-handset-mic" />
-	<ctl name="ADC1 Volume" value="12" />
-	<ctl name="TX_DEC0 Volume" value="92" />
+	<ctl name="ADC1 Volume" value="18" />
+	<ctl name="TX_DEC0 Volume" value="102" />
     </path>
 
     <path name="unprocessed-stereo-mic">
@@ -4687,14 +4688,14 @@
 
     <path name="voice-memo-8K">
         <path name="amic1" />
-		<ctl name="ADC1 Volume" value="8" />
-        <ctl name="TX_DEC0 Volume" value="84" />
+		<ctl name="ADC1 Volume" value="18" />
+        <ctl name="TX_DEC0 Volume" value="102" />
     </path>
 
     <path name="voice-memo">
         <path name="handset-mic" />
-		<ctl name="ADC1 Volume" value="8" />
-        <ctl name="TX_DEC0 Volume" value="84" />
+		<ctl name="ADC1 Volume" value="18" />
+        <ctl name="TX_DEC0 Volume" value="102" />
     </path>
     <path name="headset-voice-memo-8k">
         <path name="headset-mic" />
