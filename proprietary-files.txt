@@ -750,11 +750,9 @@ vendor/lib64/libnpu.so
 vendor/lib64/libopenvx.so
 
 # Media
-system_ext/lib/libmmosal.so
-system_ext/lib/libmmparser_lite.so
 system_ext/lib64/libmmosal.so
+system_ext/lib64/libmmparser_lite.so
 vendor/etc/media_profiles_vendor.xml
-vendor/lib/libmmosal.so;MODULE_SUFFIX=_vendor
 vendor/lib64/libmmosal.so;MODULE_SUFFIX=_vendor
 
 # Media - Codec2
