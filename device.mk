@@ -151,6 +151,13 @@ PRODUCT_PACKAGES += \
 
 $(call soong_config_set_bool,LGE_FINGERPRINT_HAL,TARGET_HAS_EGISTEC_UDFPS,true)
 
+# FM packages
+PRODUCT_PACKAGES += \
+    FM2
+
+$(call soong_config_set,libfmjni,vendor,qcom)
+$(call soong_config_set_bool,libfmjni,no_fm_firmware,true)
+
 # GPS
 PRODUCT_COPY_FILES += \
     $(call find-copy-subdir-files,*,$(LOCAL_PATH)/configs/gps/,$(TARGET_COPY_OUT_VENDOR)/etc)
