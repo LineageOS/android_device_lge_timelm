@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TimelmLineageSettingsOverlay",
+    name: "SystemUIOverlay",
     vendor: true,
 }

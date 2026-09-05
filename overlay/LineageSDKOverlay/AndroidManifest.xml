@@ -4,8 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.carrierconfig.overlay.sm8250">
-    <overlay android:targetPackage="com.android.carrierconfig"
+          package="lineageos.platform.overlay.timelm">
+    <overlay android:targetPackage="lineageos.platform"
              android:isStatic="true"
              android:priority="1" />
 </manifest>

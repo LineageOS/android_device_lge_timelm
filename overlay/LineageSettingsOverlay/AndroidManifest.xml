@@ -4,8 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.settings.overlay.sm8250">
+          package="com.android.settings.overlay.lineage.timelm">
     <overlay android:targetPackage="com.android.settings"
              android:isStatic="true"
-             android:priority="1" />
+             android:priority="2" />
 </manifest>

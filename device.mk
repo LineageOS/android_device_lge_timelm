@@ -19,15 +19,16 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 
 # Overlays
 PRODUCT_PACKAGES += \
+    ApertureOverlay \
+    CarrierConfigOverlay \
+    FrameworksResOverlay \
+    LineageSDKOverlay \
+    LineageSettingsOverlay \
+    LineageSettingsProviderOverlay \
     NcmTetheringOverlay \
-    TimelmApertureOverlay \
-    TimelmCarrierConfigOverlay \
-    TimelmFrameworksOverlay \
-    TimelmLineageSDKOverlay \
-    TimelmLineageSettingsOverlay \
-    TimelmLineageSettingsProviderOverlay \
-    TimelmSettingsOverlay \
-    TimelmSystemUIOverlay
+    SettingsOverlay \
+    SystemUIOverlay \
+    WifiResourcesOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
@@ -388,7 +389,6 @@ PRODUCT_PACKAGES += \
     hostapd \
     libwifi-hal-ctrl \
     libwifi-hal-qcom \
-    TimelmWifiOverlay \
     wpa_supplicant \
     wpa_supplicant.conf
 

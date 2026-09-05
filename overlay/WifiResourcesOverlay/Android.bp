@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TimelmApertureOverlay",
+    name: "WifiResourcesOverlay",
     vendor: true,
 }

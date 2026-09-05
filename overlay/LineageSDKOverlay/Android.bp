@@ -4,6 +4,6 @@
 //
 
 runtime_resource_overlay {
-    name: "TimelmSettingsOverlay",
+    name: "LineageSDKOverlay",
     vendor: true,
 }

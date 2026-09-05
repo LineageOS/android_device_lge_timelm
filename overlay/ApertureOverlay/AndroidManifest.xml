@@ -4,8 +4,8 @@
      SPDX-License-Identifier: Apache-2.0
 -->
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.android.systemui.overlay.sm8250">
-    <overlay android:targetPackage="com.android.systemui"
+          package="org.lineageos.aperture.overlay.timelm">
+    <overlay android:targetPackage="org.lineageos.aperture"
              android:isStatic="true"
              android:priority="1" />
 </manifest>
