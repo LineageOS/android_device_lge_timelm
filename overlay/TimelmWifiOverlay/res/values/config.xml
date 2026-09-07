@@ -8,16 +8,16 @@
          Note: This config is replacing the config_wifi_dual_band_support
          since more bands may now be supported (such as 6GHz), the naming dual_band
          is no longer indicative, and a separate config now exists for each band -->
-    <bool translatable="false" name="config_wifi5ghzSupport">true</bool>
+    <bool name="config_wifi5ghzSupport">true</bool>
 
     <!-- Indicates that 11ax mode is supported on this device
            Note that if this flag is set to true, then 11ax is assumed to be supported.
            However, if it is left to the default value of false, the 11ax support will
            be checked via NL80211 interface -->
-    <bool translatable="false" name="config_wifi11axSupportOverride">true</bool>
+    <bool name="config_wifi11axSupportOverride">true</bool>
 
     <!-- Boolean indicating whether 802.11r Fast BSS Transition is enabled on this platform -->
-    <bool translatable="false" name="config_wifi_fast_bss_transition_enabled">true</bool>
+    <bool name="config_wifi_fast_bss_transition_enabled">true</bool>
 
     <!-- Boolean indicating whether the wifi chipset supports background scanning mechanism.
          This mechanism allows the host to remain in suspend state and the dongle to actively
@@ -26,13 +26,13 @@
     <bool name="config_wifi_background_scan_support">true</bool>
 
     <!-- Integer indicating maximum hardware supported client number of soft ap -->
-    <integer translatable="false" name="config_wifiHardwareSoftapMaxClientCount">32</integer>
+    <integer name="config_wifiHardwareSoftapMaxClientCount">32</integer>
 
     <!-- Integer delay in milliseconds before set wlan interface up during watchdog recovery -->
     <integer name="config_wifi_framework_recovery_timeout_delay">3000</integer>
 
     <!-- Boolean indicating that only configurations that have the same pre-shared key will be linked -->
-    <bool translatable="false" name="config_wifi_only_link_same_credential_configurations">false</bool>
+    <bool name="config_wifi_only_link_same_credential_configurations">false</bool>
 
     <!-- Wifi driver supports Automatic channel selection (ACS) for softap -->
     <bool name="config_wifi_softap_acs_supported">true</bool>
@@ -71,20 +71,20 @@
     </integer-array>
 
     <!-- Enable WPA2 to WPA3 auto-upgrade -->
-    <bool translatable="false" name="config_wifiSaeUpgradeEnabled">false</bool>
+    <bool name="config_wifiSaeUpgradeEnabled">false</bool>
 
     <!-- Wifi driver Automatic channel selection (ACS) for softap to include DFS channels -->
-    <bool translatable="false" name="config_wifiSoftapAcsIncludeDfs">true</bool>
+    <bool name="config_wifiSoftapAcsIncludeDfs">true</bool>
 
     <!-- integer indicating additional disconnect delay (in ms) after IMS onLost() indication is received -->
     <integer name="config_wifiDelayDisconnectOnImsLostMs">1000</integer>
 
     <!-- Enable adding minimum confirmation duration when sending network score to connectivity service. -->
-    <bool translatable="false" name="config_wifiMinConfirmationDurationSendNetworkScoreEnabled">true</bool>
+    <bool name="config_wifiMinConfirmationDurationSendNetworkScoreEnabled">true</bool>
 
     <!-- Enable Aware NDP interface selection on interface that already has network set up.
      Note: the default AOSP Android does not support multiple networks on the same Aware NDI.
      Enabling this configuration will restore legacy behavior but may result in incorrect behavior.
      -->
-    <bool translatable="false" name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
+    <bool name="config_wifiAllowMultipleNetworksOnSameAwareNdi">true</bool>
 </resources>

@@ -456,12 +456,17 @@
 
     <!-- Boolean indicating if restoring network selection should be skipped -->
     <!-- The restoring is handled by modem if it is true-->
-    <bool translatable="false" name="skip_restoring_network_selection">true</bool>
+    <bool name="skip_restoring_network_selection">true</bool>
 
-    <!-- MMS user agent string -->
+    <!-- MMS user agent string, for example OemNameDeviceName
+         If the string contains a '%s' format string then that substring will be replaced
+         with the value of Build.MODEL , ie
+         <string name="config_mms_user_agent">OemName%s</string> -->
     <string name="config_mms_user_agent" translatable="false">Android-Mms/2.0</string>
 
-    <!-- MMS user agent prolfile url -->
+    <!-- MMS user agent prolfile url, for example https://uaprof.oem_name.com/DeviceName.xml
+         if the string contains a '%s' format string then that substring will be replaced
+         with the value of Build.MODEL , ie https://uaprof.oem_name.com/%s.xml -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://www.google.com/oha/rdf/ua-profile-kila.xml</string>
 
     <!-- Whether a software navigation bar should be shown. NOTE: in the future this may be
@@ -477,7 +482,7 @@
 
          Note that doze dreams are not subject to the same start conditions as ordinary dreams.
          Doze dreams will run whenever the power manager is in a dozing state. -->
-    <string name="config_dozeComponent">com.android.systemui/com.android.systemui.doze.DozeService</string>
+    <string name="config_dozeComponent" translatable="false">com.android.systemui/com.android.systemui.doze.DozeService</string>
 
     <!-- If true, the doze component is not started until after the screen has been
          turned off and the screen off animation has been performed. -->
@@ -606,7 +611,7 @@
 
          @see https://www.w3.org/TR/SVG/paths.html#PathData
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M 0,0 L -23.23, 0 L -23.23, 28.98 L 23.23, 28.98 L 23.23, 0 Z @dp</string>
+    <string name="config_mainBuiltInDisplayCutout" translatable="false">M 0,0 L -23.23, 0 L -23.23, 28.98 L 23.23, 28.98 L 23.23, 0 Z @dp</string>
 
     <!-- Whether the Unprocessed audio source supports the required frequency range and level -->
     <bool name="config_supportAudioSourceUnprocessed">true</bool>
@@ -615,7 +620,7 @@
     <bool name="config_sustainedPerformanceModeSupported">true</bool>
 
     <!-- Default files to pin via Pinner Service -->
-    <string-array translatable="false" name="config_defaultPinnerServiceFiles">
+    <string-array name="config_defaultPinnerServiceFiles" translatable="false">
         <item>"/apex/com.android.art/javalib/core-oj.jar"</item>
         <item>"/apex/com.android.art/javalib/core-libart.jar"</item>
         <item>"/system/framework/framework.jar"</item>
@@ -639,7 +644,7 @@
     </string-array>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
-    <integer-array name="config_udfps_sensor_props" translatable="false">
+    <integer-array name="config_udfps_sensor_props">
       <!--
         <item>sensorLocationX</item>
         <item>sensorLocationY</item>
@@ -656,8 +661,4 @@
 
     <!-- Whether to enable fp unlock when screen turns off on udfps devices -->
     <bool name="config_screen_off_udfps_enabled">true</bool>
-
-    <!-- Default value for fp screen off unlock toggle, it only works for the devices that support
-         fp screen off unlock-->
-    <bool name="config_screen_off_udfps_default_on">false</bool>
 </resources>
