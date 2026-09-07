@@ -1,3 +1,0 @@
-# DMA Latency
-allow hal_power_default vendor_latency_device:file rw_file_perms;
-allow hal_power_default vendor_latency_device:chr_file rw_file_perms;
