@@ -119,7 +119,7 @@ TARGET_SCREEN_HEIGHT := 2460
 
 # Camera
 PRODUCT_PACKAGES += \
-    android.hardware.camera.provider-service.lineage
+    android.hardware.camera.provider-service.lge
 
 # Configstore
 PRODUCT_PACKAGES += \
